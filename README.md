@@ -67,9 +67,6 @@ OtherService.ExecuteXXXX method executed.
 [AspectCore-Framework](https://github.com/dotnetcore/AspectCore-Framework) by dotnetcore  
 
 ## 參考文章
-* English
-  * [jwt.io](https://jwt.io/)  
-  * [ASP.NET Core 3.1 - JWT Authentication Tutorial with Example API](https://jasonwatmore.com/post/2019/10/11/aspnet-core-3-jwt-authentication-tutorial-with-example-api)  
 * Chinese
   * [ASP.NET Core 3.0 使用AspectCore-Framework实现AOP](https://www.cnblogs.com/king-23100/p/11821020.html)  
   * [Asp.Net Core轻量级Aop解决方案：AspectCore](https://www.cnblogs.com/liuhaoyang/p/aspectcore-introduction-1.html)  
