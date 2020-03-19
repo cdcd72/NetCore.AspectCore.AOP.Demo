@@ -6,12 +6,12 @@ namespace Web.Services.Implement
     {
         public string Execute()
         {
-            return "CustomService.Execute method executed.";
+            return "CustomService.Execute method executed via serviceaop.";
         }
 
         public string ExecuteXXXX()
         {
-            return "CustomService.ExecuteXXXX method executed.";
+            return "CustomService.ExecuteXXXX method executed via serviceaop.";
         }
 
         public string GetXXXX()

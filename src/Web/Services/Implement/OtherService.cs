@@ -7,7 +7,7 @@ namespace Web.Services.Implement
     {
         public string Execute()
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(); // OtherService.Execute method executed via serviceaop.
         }
 
         public string ExecuteXXXX()
