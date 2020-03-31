@@ -20,21 +20,21 @@ namespace Web
             Configuration = configuration;
         }
 
-        // ¦¹¤èªk Runtime ®É³QÄ²µo¡A¨Ï¥Î¦¹¤èªk¥[¤J¬ÛÃöªA°È¦Ü®e¾¹
+        // æ­¤æ–¹æ³• Runtime æ™‚è¢«è§¸ç™¼ï¼Œä½¿ç”¨æ­¤æ–¹æ³•åŠ å…¥ç›¸é—œæœå‹™è‡³å®¹å™¨
         public void ConfigureServices(IServiceCollection services)
         {
-            // ª`¤J©Ò»İ Services
+            // æ³¨å…¥æ‰€éœ€ Services
             services.AddTransient<ICustomService, CustomService>();
             services.AddTransient<IOtherService, OtherService>();
 
             services.AddControllers();
 
-            // ³]©w°ÊºA¥N²z
+            // è¨­å®šå‹•æ…‹ä»£ç†
             // https://github.com/dotnetcore/AspectCore-Framework
             services.ConfigureDynamicProxy(config => { config.Interceptors.AddTyped<ServiceAopAttribute>(Predicates.ForMethod("Execute*")); });
         }
 
-        // ¦¹¤èªk Runtime ®É³QÄ²µo¡A¨Ï¥Î¦¹¤èªk³]¸m HTTP ­n¨DºŞ¹D(HTTP request pipeline)
+        // æ­¤æ–¹æ³• Runtime æ™‚è¢«è§¸ç™¼ï¼Œä½¿ç”¨æ­¤æ–¹æ³•è¨­ç½® HTTP è¦æ±‚ç®¡é“(HTTP request pipeline)
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
