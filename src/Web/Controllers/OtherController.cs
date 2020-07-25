@@ -4,7 +4,7 @@ using Web.Services.Interface;
 namespace Web.Controllers
 {
     [Route("api/[controller]")]
-    public class OtherController : Controller
+    public class OtherController : ControllerBase
     {
         private readonly IOtherService _otherService;
 
